@@ -4,6 +4,8 @@
  let btn = document.querySelector('button');
  let positionX = document.getElementById('x-value');
  let positionY = document.getElementById('y-value');
+ const music = new Audio('miaulement.mp3');
+
 
 // On récupère les données de l'api puis on les convertis en Json
 
@@ -30,7 +32,13 @@ const positionMouse = (e)=>{
     positionY.textContent = e.clientY;
 
 }
+// miaulement de chat 
 
+const miaulement = ()=>{
+    music.play();
+}
+
+btn.addEventListener('click',miaulement)
 window.addEventListener('mousemove', positionMouse);
 
 
