@@ -1,0 +1,9 @@
+#img{
+    width:80vh ;
+    height:65vh ;
+}
+button{
+    display: block;
+    margin-top: 4vh;
+    background-color: blanchedalmond;
+}
